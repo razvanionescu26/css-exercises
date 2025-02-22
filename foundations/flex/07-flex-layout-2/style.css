@@ -5,6 +5,11 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 34px;
+  padding-left: 10px;
   height: 72px;
   background: darkmagenta;
   color: white;
@@ -16,14 +21,52 @@ body {
   color: darkmagenta;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.mid-section {
+  display: flex;
+  justify-content: center;
+}
+
 .sidebar {
   width: 300px;
+  padding: 16px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
 }
 
 .card {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex-basis: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
